@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('https://th.bing.com/th/id/R.f48ceff9ab3322d4e84ed12a44c484d1?rik=0KQ6OgL4T%2b9uCA&riu=http%3a%2f%2fwww.photo-paysage.com%2falbums%2fuserpics%2f10001%2fCascade_-15.JPG&ehk=kx1JjE9ugj%2bZvUIrjzSmcnslPc7NE1cOnZdra%2f3pJEM%3d&risl=1&pid=ImgRaw&r=0');
+    background-size:400%;
+    background-position: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.main{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    background-color: #00ff11;
+    max-height: 455px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 7px 7px 10px 3px ;
+}
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px;
+}
+#chk{
+    display: none;
+}
+.login{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.login label{
+    margin: 25% 0 5%;
+}
+
+label{
+    color: aliceblue;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.input{
+    width: 100%;
+    height: 40px;
+    background: #e0dede;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+.register{
+    background: #eee;
+    border-radius: 70% / 10%;
+    transform: translateY(5%);
+    transition: .8s ease-in-out;
+}
+.register label{
+    color: #00ff11;
+    transform: scale(.6);
+}
+
+#chk:checked ~ .register{
+    transform: translateY(-60%);
+}
+
+#chk:checked ~ .register label{
+    transform: scale(1);
+    margin: 10% 0 5%;
+}
+
+#chk:checked ~ .login label{
+    transform: scale(.6);
+    margin: 5% 0 5%;
+}
+
+.form button{
+    width: 85%;
+    height: 40px;
+    margin: 12px auto 10%;
+    color: #fff;
+    background: #00ff11;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: .2 ease-in;
+}
+
+.form button:hover{
+    background-color: #00ff11;
+}
